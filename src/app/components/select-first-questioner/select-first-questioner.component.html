@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="card  my-4">
+        <div class="card-header  ">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">No hay ningún preguntero seleccionado</h5>
+            </div>
+        </div>
+        <div class="card-body ">
+            <div class="d-flex align-items-center justify mx-0">
+                <label class="me-2">Seleccione un preguntero:</label>
+
+                <!-- Esconde el input file y vincula el boton al input-->
+                <input type="file" #fileInput hidden (change)="onFileChange($event)" />
+                <button type="button" class="btn btn-outline-secondary btn-sm" (click)="fileInput.click()">
+                    Seleccionar archivo
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

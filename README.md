@@ -1,27 +1,37 @@
 # Preguntero
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+Esta aplicación permite gestionar y generar preguntas a partir de un archivo Excel (.xlsx). La aplicación está desarrollada con Angular 18 y proporciona una interfaz para seleccionar un archivo de preguntas, configurar la generación de preguntas y visualizar las preguntas generadas.
 
-## Development server
+## Requisitos del archivo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+El archivo seleccionado debe ser de tipo `.xlsx` y debe contener la siguiente estructura en la primera fila:
 
-## Code scaffolding
+- Columna 1: `nro` (Número de la pregunta)
+- Columna 2: `pregunta` (Texto de la pregunta)
+- Columna 3: `unidad` (Unidad a la que pertenece la pregunta)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Funcionalidades
 
-## Build
+- **Seleccionar archivo**: Permite seleccionar un archivo `.xlsx` con las preguntas.
+- **Configurar generación de preguntas**: Permite configurar la cantidad de preguntas y las unidades a incluir.
+- **Generar preguntas**: Genera preguntas basadas en la configuración seleccionada.
+- **Visualizar preguntas**: Muestra las preguntas generadas en una tabla.
+- **Cambiar archivo**: Permite cambiar el archivo de preguntas seleccionado.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instrucciones
 
-## Running unit tests
+1. **Seleccionar archivo**: Al iniciar la aplicación, seleccione un archivo `.xlsx` con la estructura mencionada.
+2. **Configurar**: Configure la cantidad de preguntas y las unidades a incluir.
+3. **Generar**: Haga clic en "Generar preguntas" para ver las preguntas generadas.
+4. **Cambiar archivo**: Si desea cambiar el archivo, haga clic en "Cambiar preguntero" y seleccione un nuevo archivo.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Desarrollo
+Antes de ejecutar por primera vez, ejecute `npm install` para instalar todos los paquetes y dependencias necesarias en la carpeta local `node_modules` del proyecto.
 
-## Running end-to-end tests
+Para ejecutar el servidor de desarrollo, ejecute `ng serve -o` o en su defecto `ng serve` y navegue a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambia alguno de los archivos fuente.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para obtener más ayuda sobre Angular CLI, use `ng help` o consulte la [documentación de Angular CLI](https://angular.dev/tools/cli).
 
-## Further help
+## Contacto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Para cualquier consulta o problema, por favor contacte a `juanbauza00` (Usuario de GitHub).
